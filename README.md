@@ -11,6 +11,8 @@ This filter uses Pure Karma filter's code related to:
 * Runes
 * Small portion about the 35k gold items
 
+Thanks goes to KarmaNation on the parts of his filter code, regarding to the above parts.
+
 # What items are hidden?
 
 * Magic rings and amulets are not shown if their item level is not at least 88
