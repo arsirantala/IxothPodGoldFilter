@@ -1,0 +1,198 @@
+// Ixoth's gold loot filter
+// v0.01
+
+// 35,000 G
+ItemDisplay[WP12 NMAG !ETH (wnd OR ywn OR 9wn) ILVL>49 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+ItemDisplay[WP12 NMAG !ETH SOCK=1 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+
+ItemDisplay[!ETH NMAG ELT !7s8 !6mx !6sb !pad !7ar !7sc !7cm !7b7 !ame !uml !7la !ulb !7m7 !7bt !6ls !uvb !72h !7o7 !uap !7fc !7ss !uhl !6sw !7br !7cs !7wc !72a !6cb !drb !amb !ulc !7pa !6hb !obc !7fb !ulg !7bs !pab !umg !6lb !7sb !7cl !6s7 !usk !7gs !7bw !uvg !7dg !6hx !7mp !obd !7di !7cr !7xf !6cs !amd !7vo !6lx !amf !6l7 !7ma !7lw !7fl !7mt !utg !7ba !ukp !7sp]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+
+// Hide normal (non unique or set or RW) items less than 35 k
+ItemDisplay[!UNIQ !SET !RW NORM]: 
+ItemDisplay[!UNIQ !SET !RW EXC]: 
+ItemDisplay[NMAG !SET !RW ELT (7s8 OR 6mx OR 6sb OR pad OR 7ar OR 7sc OR 7cm OR 7b7 OR ame OR uml OR 7la OR ulb OR 7m7 OR 7bt OR 6ls OR uvb OR 72h OR 7o7 OR uap OR 7fc OR 7ss OR uhl OR 6sw OR 7br OR 7cs OR 7wc OR 72a OR 6cb OR drb OR amb OR ulc OR 7pa OR 6hb OR obc OR 7fb OR ulg OR 7bs OR pab OR umg OR 6lb OR 7sb OR 7cl OR 6s7 OR usk OR 7gs OR 7bw OR uvg OR 7dg OR 6hx OR 7mp OR obd OR 7di OR 7cr OR 7xf OR 6cs OR amd OR 7vo OR 6lx OR amf OR 6l7 OR 7ma OR 7lw OR 7fl OR 7mt OR utg OR 7ba OR ukp OR 7sp) SOCK<2]: 
+ItemDisplay[!ETH NMAG !SET !RW ELT SOCK>1]: %NAME% (%SOCKETS%) %WHITE%%PRICE% %TAN%g
+ItemDisplay[ETH NMAG !SET !RW ELT SOCK>1]: ETH %NAME% (%SOCKETS%) %WHITE%%PRICE% %TAN%g
+
+ItemDisplay[MAG ELT SOCK>0]: %NAME% (%SOCKETS%) %WHITE%%PRICE% %TAN%g
+ItemDisplay[RARE ELT SOCK>0]: %NAME% (%SOCKETS%) %WHITE%%PRICE% %TAN%g
+ItemDisplay[MAG ELT SOCK=0]: %NAME% %WHITE%%PRICE% %TAN%g
+ItemDisplay[RARE ELT SOCK=0]: %NAME% %WHITE%%PRICE% %TAN%g
+
+ItemDisplay[cx5]: %RED%© %PURPLE%Corrupted Orb %RED%©
+ItemDisplay[maz]: %PURPLE%÷÷÷÷÷÷÷÷÷÷÷÷÷ %RED%TRIAL %PURPLE%÷÷÷÷÷÷÷÷÷÷÷÷÷
+ItemDisplay[ma2]: %PURPLE%¤¤¤¤ %RED%TIER %PURPLE%4 %RED%MAP %PURPLE%¤¤¤¤
+ItemDisplay[ma6]: %RED%³ %GOLD%Tier %RED%3 %GOLD%Map %RED%³
+ItemDisplay[ma5]: %RED%² %YELLOW%Tier %RED%2 %YELLOW%Map %RED%²
+ItemDisplay[ma4]: %RED%¹ %DGREEN%Tier %RED%1 %DGREEN%Map %RED%¹
+ItemDisplay[fed]: %GREEN%¤¤¤¤¤¤¤¤¤¤ ESSENCE ¤¤¤¤¤¤¤¤¤¤
+ItemDisplay[tes]: %BLUE%¤¤¤ ESSENCE ¤¤¤
+ItemDisplay[ceh]: %YELLOW%¤¤¤ ESSENCE ¤¤¤
+ItemDisplay[bet]: %RED%¤¤¤ ESSENCE ¤¤¤
+ItemDisplay[toa]: %PURPLE%¤¤¤¤¤ TOKEN ¤¤¤¤¤
+ItemDisplay[cx7]: %TAN%ÎÎÎ %ORANGE%CHAOS %TAN%ÎÎÎ
+ItemDisplay[pk1]: %TAN%ÎÎÎ %PURPLE%TERROR %TAN%ÎÎÎ
+ItemDisplay[pk3]: %TAN%ÎÎÎ %YELLOW%DESTRUCTION %TAN%ÎÎÎ
+ItemDisplay[pk2]: %TAN%ÎÎÎ %GREEN%HATE %TAN%ÎÎÎ
+ItemDisplay[bey]: %PURPLE%üüü %WHITE%EYE %PURPLE%üüü
+ItemDisplay[dhn]: %PURPLE%üüü %TAN%HORN %PURPLE%üüü
+ItemDisplay[mbr]: %PURPLE%üüü %YELLOW%BRAIN %PURPLE%üüü
+ItemDisplay[cx6]: %PURPLE%üüü %RED%SOUL %PURPLE%üüü
+ItemDisplay[std]: %GOLD%+ %DGREEN%Standard %GOLD%+
+ItemDisplay[cx9]: %GOLD%+ %ORANGE%???????? %GOLD%+
+
+// Inventory (potions, tomes, etc)
+ItemDisplay[ibk]: %BLACK%«%RED%ID Tome%BLACK%»
+ItemDisplay[tbk]: %BLACK%«%BLUE%TP Tome%BLACK%»
+ItemDisplay[CLVL>44 isc]:
+ItemDisplay[CLVL>32 tsc]:
+ItemDisplay[CLVL>81 key]:
+ItemDisplay[CLVL<45 isc]: %BLACK%¯%DGREEN%?%BLACK%¯
+ItemDisplay[CLVL<33 tsc]: %BLACK%¯%GRAY%¶%BLACK%¯
+ItemDisplay[CLVL<80 key]: %BLACK%¯%TAN%Î%BLACK%¯
+ItemDisplay[box]: %BLACK%«§%TAN%Crafting Cube%BLACK%§»
+ItemDisplay[hp5]: %BLACK%¯ %RED%ð%BLACK% ¯
+ItemDisplay[mp5]: %BLACK%¯ %BLUE%ð%BLACK% ¯
+ItemDisplay[rvs]: %BLACK%¯ %PURPLE%ð%BLACK% ¯
+ItemDisplay[rvl]: %BLACK%¯ %PURPLE%®%BLACK% ¯
+ItemDisplay[CLVL>79 hp4]:
+ItemDisplay[CLVL>48 hp3]:
+ItemDisplay[CLVL>24 hp2]:
+ItemDisplay[CLVL>12 hp1]:
+ItemDisplay[CLVL>79 mp4]:
+ItemDisplay[CLVL>60 mp3]:
+ItemDisplay[CLVL>30 mp2]:
+ItemDisplay[CLVL>15 mp1]:
+ItemDisplay[CLVL<80 hp4]: %BLACK%¯ %RED%ð%BLACK% ¯
+ItemDisplay[CLVL<49 hp3]: %BLACK%¯ %RED%ð%BLACK% ¯
+ItemDisplay[CLVL<25 hp2]: %BLACK%¯ %RED%ð%BLACK% ¯
+ItemDisplay[CLVL<13 hp1]: %BLACK%¯ %RED%ð%BLACK% ¯
+ItemDisplay[CLVL<80 mp4]: %BLACK%¯ %BLUE%ð%BLACK% ¯
+ItemDisplay[CLVL<61 mp3]: %BLACK%¯ %BLUE%ð%BLACK% ¯
+ItemDisplay[CLVL<31 mp2]: %BLACK%¯ %BLUE%ð%BLACK% ¯
+ItemDisplay[CLVL<16 mp1]: %BLACK%¯ %BLUE%ð%BLACK% ¯
+ItemDisplay[leg]: %TAN%Wirt's Leg
+ItemDisplay[ear]: %RED%%NAME%
+ItemDisplay[CLVL<80 yps]: %BLACK%¯%GREEN%ð%BLACK%¯
+//ItemDisplay[CLVL>81 yps]: %BLACK%¯%GREEN%ð%BLACK%¯
+ItemDisplay[yps]:
+ItemDisplay[CLVL<20 wms]: %BLACK%¯%YELLOW%ð%BLACK%¯
+ItemDisplay[wms]:
+ItemDisplay[CLVL<20 vps]: %BLACK%¯%WHITE%ð%BLACK%¯
+ItemDisplay[vps]:
+ItemDisplay[gpm]:
+ItemDisplay[opm]:
+ItemDisplay[opl]:
+ItemDisplay[ops]:
+ItemDisplay[gps]:
+ItemDisplay[gpl]:
+
+//╔════════════╗
+//║ Unique EQX ║
+//╚════════════╝
+ItemDisplay[UNI !ID cm3]: %GOLD%¤ Gheed's Fortune ¤
+ItemDisplay[UNI !ID cm1]: %PURPLE%¤¤¤¤¤¤¤¤ %RED%ANNIHILUS %PURPLE%¤¤¤¤¤¤¤¤
+ItemDisplay[UNI !ID cm2]: %PURPLE%¤¤¤¤¤¤¤¤¤ %YELLOW%TORCH %PURPLE%¤¤¤¤¤¤¤¤¤
+ItemDisplay[UNI !ID amu]: %GOLD%÷%RED%÷÷÷÷÷÷÷÷÷%GOLD%÷ %PURPLE%AMULET %GOLD%÷%RED%÷÷÷÷÷÷÷÷÷%GOLD%÷
+ItemDisplay[UNI !ID rin]: %GOLD%÷%RED%÷÷÷÷÷÷÷÷÷%GOLD%÷ %PURPLE%RING %GOLD%÷%RED%÷÷÷÷÷÷÷÷÷%GOLD%÷
+ItemDisplay[UNI !ID jew]: %RED%°°°%YELLOW%°°°%GREEN%°°°%BLUE%°°° %PURPLE%JEWEL %BLUE%°°°%GREEN%°°°%YELLOW%°°°%RED%°°°
+
+//╔══════╗
+//║ GEMS ║
+//╚══════╝
+ItemDisplay[gpv]: %BLACK%«%PURPLE%Amethyst%BLACK%»
+ItemDisplay[gpw]: %BLACK%«%WHITE%Diamond%BLACK%»
+ItemDisplay[gpg]: %BLACK%«%GREEN%Emerald%BLACK%»
+ItemDisplay[gpr]: %BLACK%«%RED%Ruby%BLACK%»
+ItemDisplay[gpb]: %BLACK%«%BLUE%Sapphire%BLACK%»
+ItemDisplay[gpy]: %BLACK%«%YELLOW%Topaz%BLACK%»
+ItemDisplay[skz]: %BLACK%«%ORANGE%Skull%BLACK%»
+ItemDisplay[gzv]: %PURPLE%««%GRAY%Amethyst%PURPLE%»»
+ItemDisplay[glw]: %WHITE%««%GRAY%Diamond%WHITE%»»
+ItemDisplay[glg]: %GREEN%««%GRAY%Emerald%GREEN%»»
+ItemDisplay[glr]: %RED%««%GRAY%Ruby%RED%»»
+ItemDisplay[glb]: %BLUE%««%GRAY%Sapphire%BLUE%»»
+ItemDisplay[gly]: %YELLOW%««%GRAY%Topaz%YELLOW%»»
+ItemDisplay[skl]: %ORANGE%««%GRAY%Skull%ORANGE%»»
+ItemDisplay[CLVL>39 (gsv OR gsw OR gsg OR gsr OR gsb OR gsy OR sku)]:
+ItemDisplay[CLVL>29 (gfv OR gfw OR gfg OR gfr OR gfb OR gfy OR skf)]:
+ItemDisplay[CLVL>19 (gcv OR gcw OR gcg OR gcr OR gcb OR gcy OR skc)]:
+ItemDisplay[CLVL<40 gsv]: %PURPLE%»%GRAY%amethyst
+ItemDisplay[CLVL<40 gsw]: %WHITE%»%GRAY%diamond
+ItemDisplay[CLVL<40 gsg]: %GREEN%»%GRAY%emerald
+ItemDisplay[CLVL<40 gsr]: %RED%»%GRAY%ruby
+ItemDisplay[CLVL<40 gsb]: %BLUE%»%GRAY%sapphire
+ItemDisplay[CLVL<40 gsy]: %YELLOW%»%GRAY%topaz
+ItemDisplay[CLVL<40 sku]: %BLACK%»%GRAY%skull
+ItemDisplay[CLVL<30 gfv]: %PURPLE%»%GRAY%flawed
+ItemDisplay[CLVL<30 gfw]: %WHITE%»%GRAY%flawed
+ItemDisplay[CLVL<30 gfg]: %GREEN%»%GRAY%flawed
+ItemDisplay[CLVL<30 gfr]: %RED%»%GRAY%flawed
+ItemDisplay[CLVL<30 gfb]: %BLUE%»%GRAY%flawed
+ItemDisplay[CLVL<30 gfy]: %YELLOW%»%GRAY%flawed
+ItemDisplay[CLVL<30 skf]: %BLACK%»%GRAY%skull
+ItemDisplay[CLVL<20 gcv]: %PURPLE%»%GRAY%chipped
+ItemDisplay[CLVL<20 gcw]: %WHITE%»%GRAY%chipped
+ItemDisplay[CLVL<20 gcg]: %GREEN%»%GRAY%chipped
+ItemDisplay[CLVL<20 gcr]: %RED%»%GRAY%chipped
+ItemDisplay[CLVL<20 gcb]: %BLUE%»%GRAY%chipped
+ItemDisplay[CLVL<20 gcy]: %YELLOW%»%GRAY%chipped
+ItemDisplay[CLVL<20 skc]: %BLACK%»%GRAY%skull
+//╔═══════╗
+//║ RUNES ║
+//╚═══════╝
+ItemDisplay[RW]: %NAME%
+ItemDisplay[r01]: %TAN%%RUNENAME% %GRAY%1
+ItemDisplay[r02]: %TAN%%RUNENAME% %GRAY%2
+ItemDisplay[r03]: %TAN%%RUNENAME% %GRAY%3
+ItemDisplay[r04]: %TAN%%RUNENAME% %GRAY%4
+ItemDisplay[r05]: %TAN%%RUNENAME% %GRAY%5
+ItemDisplay[r06]: %TAN%%RUNENAME% %GRAY%6
+ItemDisplay[r07]: %TAN%%RUNENAME% %GRAY%7
+ItemDisplay[r08]: %TAN%%RUNENAME% %GRAY%8
+ItemDisplay[r09]: %TAN%%RUNENAME% %GRAY%9
+ItemDisplay[r10]: %TAN%%RUNENAME% %GRAY%10
+ItemDisplay[r11]: %TAN%%RUNENAME% %GRAY%11
+ItemDisplay[r12]: %TAN%%RUNENAME% %GRAY%12
+ItemDisplay[r13]: %TAN%%RUNENAME% %GRAY%13
+ItemDisplay[r14]: %TAN%%RUNENAME% %GRAY%14
+ItemDisplay[r15]: %TAN%%RUNENAME% %GRAY%15
+ItemDisplay[r16]: %TAN%%RUNENAME% %GRAY%16
+ItemDisplay[r17]: %RED%¤ %ORANGE%%RUNENAME% %RED%¤ %GRAY%17
+ItemDisplay[r18]: %RED%¤¤¤ %ORANGE%%RUNENAME% %RED%¤¤¤ %GRAY%18
+ItemDisplay[r19]: %RED%¤¤ %ORANGE%%RUNENAME% %RED%¤¤ %GRAY%19
+ItemDisplay[r20]: %RED%¤¤¤¤¤¤ %ORANGE%%RUNENAME% %RED%¤¤¤¤¤¤ %GRAY%20
+ItemDisplay[r21]: %RED%¤¤¤¤ %PURPLE%%RUNENAME% %RED%¤¤¤¤ %GRAY%21
+ItemDisplay[r22]: %RED%¤¤¤¤¤ %PURPLE%%RUNENAME% %RED%¤¤¤¤¤ %GRAY%22
+ItemDisplay[r23]: %RED%¤¤¤¤¤¤ %PURPLE%%RUNENAME% %RED%¤¤¤¤¤¤ %GRAY%23
+ItemDisplay[r24]: %RED%¤¤¤¤¤¤¤¤ %PURPLE%%RUNENAME% %RED%¤¤¤¤¤¤¤¤ %GRAY%24
+ItemDisplay[r25]: %RED%¤¤¤¤¤¤¤¤ %PURPLE%%RUNENAME% %RED%¤¤¤¤¤¤¤¤ %GRAY%25
+ItemDisplay[r26]: %GREEN%26 %RED%¤¤¤¤¤¤¤¤¤¤ %PURPLE%VEX %RED%¤¤¤¤¤¤¤¤¤¤ %GREEN%26
+ItemDisplay[r27]: %GREEN%27 %RED%¤¤¤¤¤¤¤¤¤¤ %PURPLE%OHM %RED%¤¤¤¤¤¤¤¤¤¤ %GREEN%27
+ItemDisplay[r28]: %GREEN%28 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%LO %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%28
+ItemDisplay[r29]: %GREEN%29 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%SUR %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%29
+ItemDisplay[r30]: %GREEN%30 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%BER %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%30
+ItemDisplay[r31]: %GREEN%31 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%JAH %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%31
+ItemDisplay[r32]: %GREEN%32 %PURPLE%¤¤¤¤¤¤¤¤¤¤ %RED%CHAM %PURPLE%¤¤¤¤¤¤¤¤¤¤ %GREEN%32
+ItemDisplay[r33]: %GREEN%33 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%ZOD %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%33
+
+// Rings/amulets (only show ilvl 88 and above blue with own formatting)
+ItemDisplay[MAG amu ILVL<88]: 
+ItemDisplay[MAG amu ILVL=88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷ 
+ItemDisplay[MAG amu ILVL>88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
+ItemDisplay[MAG rin ILVL<88]: 
+ItemDisplay[MAG rin ILVL=88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
+ItemDisplay[MAG rin ILVL>88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
+
+// Hide blue arrows and bolts
+ItemDisplay[MAG aq2]: 
+ItemDisplay[MAG cq2]: 
+
+//Catchall section which matches all other items which above rules didn't match
+ItemDisplay[NMAG ILVL>6]: %GRAY%Catchall %NAME% (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
+ItemDisplay[ETH SOCK>0]: %GRAY%Catchall ETH %NAME% [%SOCKETS% OS] (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
+ItemDisplay[ETH SOCK=0]: %GRAY%Catchall ETH %NAME% (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
+ItemDisplay[SOCK>0]: %GRAY%Catchall %NAME% [%SOCKETS% OS] (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
+//ItemDisplay[]: %GRAY%%NAME% [%CODE%] (%GOLD%%PRICE% G%GRAY%)
+// <- Own stuff here
