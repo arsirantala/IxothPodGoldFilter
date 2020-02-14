@@ -178,10 +178,10 @@ ItemDisplay[r32]: %GREEN%32 %PURPLE%¤¤¤¤¤¤¤¤¤¤ %RED%CHAM %PURPLE%¤¤�
 ItemDisplay[r33]: %GREEN%33 %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %RED%ZOD %PURPLE%¤¤¤¤¤¤¤¤¤¤¤ %GREEN%33
 
 // Rings/amulets (only show ilvl 88 and above blue with own formatting)
-ItemDisplay[MAG amu ILVL<88]: 
+// ItemDisplay[MAG amu ILVL<88]: 
 ItemDisplay[MAG amu ILVL=88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷ 
 ItemDisplay[MAG amu ILVL>88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
-ItemDisplay[MAG rin ILVL<88]: 
+// ItemDisplay[MAG rin ILVL<88]: 
 ItemDisplay[MAG rin ILVL=88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
 ItemDisplay[MAG rin ILVL>88]: %BLACK%÷ %GRAY%%NAME% %GRAY% [L%ILVL%] %BLACK%÷
 
@@ -190,9 +190,9 @@ ItemDisplay[MAG aq2]:
 ItemDisplay[MAG cq2]: 
 
 //Catchall section which matches all other items which above rules didn't match
-ItemDisplay[NMAG ILVL>6]: %GRAY%Catchall %NAME% (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
-ItemDisplay[ETH SOCK>0]: %GRAY%Catchall ETH %NAME% [%SOCKETS% OS] (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
-ItemDisplay[ETH SOCK=0]: %GRAY%Catchall ETH %NAME% (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
-ItemDisplay[SOCK>0]: %GRAY%Catchall %NAME% [%SOCKETS% OS] (%GOLD%%PRICE% G%GRAY%) %WHITE%Code: %CODE%
-//ItemDisplay[]: %GRAY%%NAME% [%CODE%] (%GOLD%%PRICE% G%GRAY%)
-// <- Own stuff here
+ItemDisplay[!SET !UNIQUE !RW SOCK=0]: %NAME% %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
+ItemDisplay[!SET !UNIQUE !RW SOCK>0]: %NAME% (%SOCKETS%) %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
+ItemDisplay[SET OR UNIQUE OR RW OR RARE OR MAG SOCK=0]: %NAME%
+ItemDisplay[SET OR UNIQUE OR RW OR RARE OR MAG SOCK>0]: %NAME% (%SOCKETS%)
+ItemDisplay[SOCK=0]: %NAME% %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
+ItemDisplay[SOCK>0]: %NAME% (%SOCKETS%) %WHITE%Code: %CODE%
