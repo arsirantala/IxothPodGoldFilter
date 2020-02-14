@@ -190,9 +190,9 @@ ItemDisplay[MAG aq2]:
 ItemDisplay[MAG cq2]: 
 
 //Catchall section which matches all other items which above rules didn't match
-ItemDisplay[!SET !UNIQUE !RW SOCK=0]: %NAME% %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
-ItemDisplay[!SET !UNIQUE !RW SOCK>0]: %NAME% (%SOCKETS%) %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
-ItemDisplay[SET OR UNIQUE OR RW OR RARE OR MAG SOCK=0]: %NAME%
-ItemDisplay[SET OR UNIQUE OR RW OR RARE OR MAG SOCK>0]: %NAME% (%SOCKETS%)
+// ItemDisplay[!SET !UNI !RW SOCK=0]: %NAME% %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
+// ItemDisplay[!SET !UNI !RW SOCK>0]: %NAME% (%SOCKETS%) %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
+ItemDisplay[SET OR UNI OR RW OR RARE OR MAG SOCK=0]: %NAME%
+ItemDisplay[SET OR UNI OR RW OR RARE OR MAG SOCK>0]: %NAME% (%SOCKETS%)
 ItemDisplay[SOCK=0]: %NAME% %WHITE%Code: %CODE% %GRAY%(%GOLD%%PRICE% G%GRAY%)
 ItemDisplay[SOCK>0]: %NAME% (%SOCKETS%) %WHITE%Code: %CODE%
