@@ -6,7 +6,8 @@ ItemDisplay[WP12 NMAG !ETH (wnd OR ywn OR 9wn) ILVL>49 (SK73>0 OR SK79=3 OR SK82
 ItemDisplay[WP12 NMAG !ETH SOCK=1 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
 ItemDisplay[NMAG !ETH !ED=15 (7tk OR 7ta OR 7bk)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
 
-ItemDisplay[!ETH NMAG ELT !7s8 !6mx !6sb !pad !7ar !7sc !7cm !7b7 !ame !uml !7la !ulb !7m7 !7bt !6ls !uvb !72h !7o7 !uap !7fc !7ss !uhl !6sw !7br !7cs !7wc !72a !6cb !drb !amb !ulc !7pa !6hb !obc !7fb !ulg !7bs !pab !umg !6lb !7sb !7cl !6s7 !usk !7gs !7bw !uvg !7dg !6hx !7mp !obd !7di !7cr !7xf !6cs !amd !7vo !6lx !amf !6l7 !7ma !7lw !7fl !7mt !utg !7ba !ukp !7sp]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+ItemDisplay[!ETH NMAG ELT !7s8 !6mx !6sb !pad !7ar !7sc !7cm !7b7 !ame !uml !7la !ulb !7m7 !7bt !6ls !uvb !72h !7o7 !uap !7fc !7ss !uhl !6sw !7br !7cs !7wc !72a !6cb !drb !amb !ulc !7pa !6hb !obc !7fb !ulg !7bs !pab !umg !6lb !7sb !7cl !6s7 !usk !7gs !7bw !uvg !7dg !6hx !7mp !obd !7di !7cr !7xf !6cs !amd !7vo !6lx !amf !6l7 !7ma !7lw !7fl !7mt !utg !7ba !ukp !7sp SOCK=0]: $ %NAME% %WHITE%%PRICE% %TAN%g $
+ItemDisplay[!ETH NMAG ELT !7s8 !6mx !6sb !pad !7ar !7sc !7cm !7b7 !ame !uml !7la !ulb !7m7 !7bt !6ls !uvb !72h !7o7 !uap !7fc !7ss !uhl !6sw !7br !7cs !7wc !72a !6cb !drb !amb !ulc !7pa !6hb !obc !7fb !ulg !7bs !pab !umg !6lb !7sb !7cl !6s7 !usk !7gs !7bw !uvg !7dg !6hx !7mp !obd !7di !7cr !7xf !6cs !amd !7vo !6lx !amf !6l7 !7ma !7lw !7fl !7mt !utg !7ba !ukp !7sp SOCK>0]: $ %NAME% (%SOCKETS%) %WHITE%%PRICE% %TAN%g $
 
 // Hide normal (non unique or set or RW) items less than 35 k
 //ItemDisplay[!UNIQ !SET !RW NORM]: 
