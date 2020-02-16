@@ -1,6 +1,13 @@
 // Ixoth's gold loot filter
 // v0.01
 
+// Skip showing small amounts of gold based on character level
+ItemDisplay[CLVL>79 GOLD<5000]:
+ItemDisplay[CLVL>59 GOLD<2500]:
+ItemDisplay[CLVL>44 GOLD<750]:
+ItemDisplay[CLVL>24 GOLD<250]:
+ItemDisplay[CLVL<25 GOLD<100]:
+
 // 35,000 G
 ItemDisplay[WP12 NMAG !ETH (wnd OR ywn OR 9wn) ILVL>49 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
 ItemDisplay[WP12 NMAG !ETH SOCK=1 (SK73>0 OR SK79=3 OR SK82=3 OR SK83>1 OR SK85=3 OR SK86>1 OR SK87>0 OR SK88>0 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: $ %NAME% %WHITE%%PRICE% %TAN%g $
