@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cp item.filter /c/Users/arsir/Documents/IxothPodGoldFilter/
+cp item.filter $USERPROFILE/Documents/IxothPodGoldFilter/
